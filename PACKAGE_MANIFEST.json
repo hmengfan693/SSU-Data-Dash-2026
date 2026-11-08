@@ -34,8 +34,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 8923,
-      "sha256": "c30030288761cbee885c2f43e9c85630a917c224600778077761bdf6c18133bb"
+      "bytes": 8922,
+      "sha256": "9e3192859d507a678e5ee6a1db12660c3b8cf9d75cf50eaf2720e8c2882a520e"
     },
     {
       "path": "check_submission.py",
@@ -54,8 +54,8 @@
     },
     {
       "path": "docs/OFFICIAL_REQUIREMENTS.md",
-      "bytes": 3240,
-      "sha256": "ef1c7505771d5474c52c8c99890820f54e50f267300e6984355ff97a0cedcf7a"
+      "bytes": 3246,
+      "sha256": "287dfb9590e8a67e483f6c76c54be2a3e643c9b12725e3de53bcdd645e068563"
     },
     {
       "path": "docs/official/README.md",
@@ -385,7 +385,7 @@
     {
       "path": "report/README.md",
       "bytes": 1104,
-      "sha256": "963258222cf9411ff1dda759cc6be798335977641f84ec03080746768d126cce"
+      "sha256": "5360b2d43fe619a4db2aa374c7bef69cd8b27775ef174b53304bb44e0fbdb3a7"
     },
     {
       "path": "report/SSU_Data_Dash_2026_Report_v17.md",
@@ -406,6 +406,16 @@
       "path": "report/SSU_Data_Dash_2026_Report_v18.pdf",
       "bytes": 1208510,
       "sha256": "1cb6cc840a4438facf935905be532712d74b7f2ab8a3a6d56a0ca01b0a343719"
+    },
+    {
+      "path": "report/SSU_Data_Dash_2026_Report_v19.md",
+      "bytes": 31520,
+      "sha256": "0fd94e766e42f0d29f1e8294b7e3b2ddda4265f06ee1865aa34bf5af32ff81e3"
+    },
+    {
+      "path": "report/SSU_Data_Dash_2026_Report_v19.pdf",
+      "bytes": 1207496,
+      "sha256": "087747168359c0abd88b05b7742cfef86c814b90b050bddf26afc7457e8fc2ab"
     },
     {
       "path": "report/figures/result-price-deciles.png",

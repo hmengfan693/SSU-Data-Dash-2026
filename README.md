@@ -59,7 +59,7 @@ These are cumulative development results: the existing configuration-selection w
 
 ### Report, slides and preliminary speaking script
 
-- [Report PDF](report/SSU_Data_Dash_2026_Report_v18.pdf) and [English Markdown](report/SSU_Data_Dash_2026_Report_v18.md)
+- [Report PDF](report/SSU_Data_Dash_2026_Report_v19.pdf) and [English Markdown](report/SSU_Data_Dash_2026_Report_v19.md)
 - [Seven-slide presentation](presentation/SSU_Data_Dash_5min_Both_Protocols_2026-11-08.pdf) and [presentation with four backups](presentation/SSU_Data_Dash_with_Backup.pdf)
 - [Preliminary English speaking script](presentation/Initial_Speaking_Script_EN.md) and [slide-by-slide notes](presentation/Slides_and_Speaker_Notes.md)
 - [Editable Beamer source package](presentation/SSU_Data_Dash_LaTeX_Package.zip)
@@ -86,13 +86,13 @@ This command checks IDs, forecast hashes and scores; it does not fit models or r
 | `evidence/` | Current selected development predictions, comparisons, configurations and historical verification records |
 | `research_source/` | Historical training and experiment code for inspection; see its [scope note](research_source/README.md) |
 | `docs/` | Method explanation and official requirement snapshots |
-| `report/`, `presentation/` | Latest report draft, slides, editable source and preliminary speaking script |
+| `report/`, `presentation/` | Final report, slides, editable source and preliminary speaking script |
 | `PACKAGE_MANIFEST.json` | Actual portable file hashes for this release |
 
 See [method and limitations](docs/METHOD.md) and [official upload requirements](docs/OFFICIAL_REQUIREMENTS.md). Historical research IDs and tool names are retained where needed for traceability. `evidence/*/protocol_portable.json` replaces the original local workspace prefix with `ORIGINAL_WORKSPACE`; original protocols and experiments remain preserved locally. Historical verification files are records of earlier checks, not new checks of this reorganized directory. The release checks are in `evidence/release_verification.json`.
 
 ## Submission status
 
-Publishing this repository is one part of the competition submission. The v18 report names team hmf and member Frank hu and links to the team repository and [YouTube video](https://youtu.be/_39kVEx1bFA). Video metadata reports 4 minutes 31 seconds and a playable status. The report and presentation identify both validation protocols. Review the complete report and confirm video playback before submitting. Publishing these files does not submit the organizer’s form or establish a hidden-test score.
+Publishing this repository is one part of the competition submission. The final v19 report names team hmf and member Frank hu and links to the team repository and [YouTube video](https://youtu.be/_39kVEx1bFA). Video metadata reports 4 minutes 31 seconds and a playable status. The report and presentation identify both validation protocols. Review the complete report and confirm video playback before submitting. Publishing these files does not submit the organizer’s form or establish a hidden-test score.
 
 Starter code is credited to [Erzheng Zhang's official repository](https://github.com/erwinzhang7/SSU-Data-Dash); its MIT license is preserved in [`LICENSE`](LICENSE).
