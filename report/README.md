@@ -1,11 +1,11 @@
 # Report draft
 
-The v17 report presents official monthly and team fixed-four-month validation, with each Model row labelled by protocol. The PDF has four main pages, followed by the outside-data table and appendices.
+The v18 report presents official monthly and team fixed-four-month validation, with each Model row labelled by protocol. The PDF has four main pages, followed by the outside-data table and appendices.
 
-Team name, all members’ full English names and the YouTube URL remain pending. This is a review draft and does not establish a completed organizer submission.
+Team: hmf. Member: Frank hu. The report includes the [YouTube video](https://youtu.be/_39kVEx1bFA) and the team GitHub link. Confirm the report and playback before organizer submission.
 
-- [PDF](SSU_Data_Dash_2026_Report_v17.pdf)
-- [English Markdown](SSU_Data_Dash_2026_Report_v17.md)
+- [PDF](SSU_Data_Dash_2026_Report_v18.pdf)
+- [English Markdown](SSU_Data_Dash_2026_Report_v18.md)
 
 The complete local monthly run preserves 42 fitted models and training IDs. The public compact evidence is under `evidence/official_monthly_summary/`; regenerate a complete run with the repository validation command.
 
