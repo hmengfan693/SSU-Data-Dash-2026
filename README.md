@@ -60,7 +60,7 @@ These are cumulative development results: the existing configuration-selection w
 ### Report, slides and preliminary speaking script
 
 - [Report PDF](report/SSU_Data_Dash_2026_Report_v17.pdf) and [English Markdown](report/SSU_Data_Dash_2026_Report_v17.md)
-- [Seven-slide presentation](presentation/SSU_Data_Dash_5min.pdf) and [presentation with four backups](presentation/SSU_Data_Dash_with_Backup.pdf)
+- [Seven-slide presentation](presentation/SSU_Data_Dash_5min_Both_Protocols_2026-11-08.pdf) and [presentation with four backups](presentation/SSU_Data_Dash_with_Backup.pdf)
 - [Preliminary English speaking script](presentation/Initial_Speaking_Script_EN.md) and [slide-by-slide notes](presentation/Slides_and_Speaker_Notes.md)
 - [Editable Beamer source package](presentation/SSU_Data_Dash_LaTeX_Package.zip)
 

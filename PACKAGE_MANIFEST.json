@@ -34,8 +34,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 8799,
-      "sha256": "686d2a0aa4b71e68b2e5bc7c75e753a908af1bf5067c9a0031fa05cfb4fed239"
+      "bytes": 8825,
+      "sha256": "3c04f2f0c1ada4d4d4393b8dc8b30a99fc5f942a9527feb40d070fbc672dd242"
     },
     {
       "path": "check_submission.py",
@@ -334,8 +334,8 @@
     },
     {
       "path": "presentation/README.md",
-      "bytes": 1255,
-      "sha256": "d925b733ff032b4a265405538f849db011cfab8c1077888cc615ea0a80ab9274"
+      "bytes": 1536,
+      "sha256": "91331937396061e41ff8115b540ed5ee2d80d577ca5ea704b6d2efffe4ccf1b3"
     },
     {
       "path": "presentation/SSU_Data_Dash_5min.pdf",
@@ -346,6 +346,11 @@
       "path": "presentation/SSU_Data_Dash_5min.tex",
       "bytes": 16646,
       "sha256": "9ec3254d6692793f29b118b53891cb9b44bcc28c25e10752d6ed289055c4e8e9"
+    },
+    {
+      "path": "presentation/SSU_Data_Dash_5min_Both_Protocols_2026-11-08.pdf",
+      "bytes": 52234,
+      "sha256": "b2c73c6af060b39043fdfb9584a9ed8c311891427fac0c3f7b60d01a8c520f96"
     },
     {
       "path": "presentation/SSU_Data_Dash_LaTeX_Package.zip",
