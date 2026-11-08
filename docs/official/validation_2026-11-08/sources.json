@@ -1,0 +1,20 @@
+[
+  {
+    "file": "handout.md",
+    "url": "https://raw.githubusercontent.com/erwinzhang7/SSU-Data-Dash/main/handout.md",
+    "sha256": "c7785a96573ab52c04e184b06de64aeb229bc237bc48901fc31e7010a734d35a",
+    "retrieved_date_toronto": "2026-11-08"
+  },
+  {
+    "file": "run.py",
+    "url": "https://raw.githubusercontent.com/erwinzhang7/SSU-Data-Dash/main/run.py",
+    "sha256": "bf87fd2967ff6422de14cb950bcc8bf4221178225e0111c336bcaed08a70b70f",
+    "retrieved_date_toronto": "2026-11-08"
+  },
+  {
+    "file": "rubric.md",
+    "url": "https://raw.githubusercontent.com/erwinzhang7/SSU-Data-Dash/main/rubric.md",
+    "sha256": "03343093df8e3e2715b93e693181a8d8de22dff6c1c4eb2743aad7e3bedc661a",
+    "retrieved_date_toronto": "2026-11-08"
+  }
+]

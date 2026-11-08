@@ -1,0 +1,23 @@
+track,level,group,n,fixed_mdape,monthly_mdape,delta_mdape_pp,comparison
+off_market,overall,all,7773,7.949597423510467,7.566294919454771,-0.3833025040556963,Same IDs; different updating/horizon protocols; not a model ranking
+off_market,month,2026-02,1442,7.8048952664442215,7.8048952664442215,0.0,Same IDs; different updating/horizon protocols; not a model ranking
+off_market,month,2026-03,1816,7.440383940278769,7.065397612395545,-0.3749863278832244,Same IDs; different updating/horizon protocols; not a model ranking
+off_market,month,2026-04,2224,7.955654454274394,7.559417922146078,-0.39623653212831567,Same IDs; different updating/horizon protocols; not a model ranking
+off_market,month,2026-05,2291,8.374372781789255,7.801591593911767,-0.5727811878774878,Same IDs; different updating/horizon protocols; not a model ranking
+off_market,house_type_name,Co-Op Apt,41,11.898484848484848,12.21422888964655,0.31574404116170207,Same IDs; different updating/horizon protocols; not a model ranking
+off_market,house_type_name,Condo Apt,3615,6.491512915129151,6.282037675776068,-0.20947523935308343,Same IDs; different updating/horizon protocols; not a model ranking
+off_market,house_type_name,Condo Townhouse,472,6.5998219946387096,6.216944517058581,-0.3828774775801289,Same IDs; different updating/horizon protocols; not a model ranking
+off_market,house_type_name,Detached,2482,10.278782038741532,9.653191609783537,-0.6255904289579952,Same IDs; different updating/horizon protocols; not a model ranking
+off_market,house_type_name,Freehold Townhouse,316,9.496507267084269,9.3162854728382,-0.18022179424606932,Same IDs; different updating/horizon protocols; not a model ranking
+off_market,house_type_name,Semi-Detached,847,10.84018481222604,9.57962224917692,-1.2605625630491204,Same IDs; different updating/horizon protocols; not a model ranking
+list_aware,overall,all,7773,3.934101382488479,3.9873470234391206,0.05324564095064144,Same IDs; different updating/horizon protocols; not a model ranking
+list_aware,month,2026-02,1442,3.915099450463508,3.915099450463508,0.0,Same IDs; different updating/horizon protocols; not a model ranking
+list_aware,month,2026-03,1816,3.8531309619684464,3.9672762884148165,0.1141453264463701,Same IDs; different updating/horizon protocols; not a model ranking
+list_aware,month,2026-04,2224,3.92845912046454,3.943005470786022,0.014546350321482215,Same IDs; different updating/horizon protocols; not a model ranking
+list_aware,month,2026-05,2291,4.03870655592291,4.06847984458475,0.029773288661839814,Same IDs; different updating/horizon protocols; not a model ranking
+list_aware,house_type_name,Co-Op Apt,41,5.4812937484914315,5.209792843691149,-0.27150090480028233,Same IDs; different updating/horizon protocols; not a model ranking
+list_aware,house_type_name,Condo Apt,3615,3.117723156532988,3.113363059046075,-0.00436009748691335,Same IDs; different updating/horizon protocols; not a model ranking
+list_aware,house_type_name,Condo Townhouse,472,3.877704115379361,3.9950362307160945,0.11733211533673327,Same IDs; different updating/horizon protocols; not a model ranking
+list_aware,house_type_name,Detached,2482,4.992289699723369,5.056926518573722,0.06463681885035388,Same IDs; different updating/horizon protocols; not a model ranking
+list_aware,house_type_name,Freehold Townhouse,316,5.549967165058629,5.640263275337617,0.0902961102789881,Same IDs; different updating/horizon protocols; not a model ranking
+list_aware,house_type_name,Semi-Detached,847,5.425600468658465,5.373039386545835,-0.05256108211263033,Same IDs; different updating/horizon protocols; not a model ranking

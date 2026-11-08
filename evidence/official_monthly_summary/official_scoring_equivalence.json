@@ -1,0 +1,38 @@
+{
+  "off_market": {
+    "exact_official_function_equivalence": true,
+    "test_n": 7773,
+    "scores": {
+      "n": 7773,
+      "mdape": 7.95,
+      "mape": 10.38,
+      "median_signed_error": -2.55,
+      "mdape_95ci": [
+        7.72,
+        8.19
+      ],
+      "mape_95ci": [
+        10.17,
+        10.61
+      ]
+    }
+  },
+  "list_aware": {
+    "exact_official_function_equivalence": true,
+    "test_n": 7773,
+    "scores": {
+      "n": 7773,
+      "mdape": 3.93,
+      "mape": 5.19,
+      "median_signed_error": -0.34,
+      "mdape_95ci": [
+        3.82,
+        4.07
+      ],
+      "mape_95ci": [
+        5.09,
+        5.29
+      ]
+    }
+  }
+}

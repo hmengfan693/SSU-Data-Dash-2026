@@ -1,4 +1,7 @@
-"""Rebuild features and replay every selected final model, then check exact hashes."""
+"""Predict with frozen final models, check CSVs, or refit official monthly folds.
+
+python run.py validate --data-dir /path/to/data --output /new/validation/folder
+"""
 import argparse
 import hashlib
 import io
@@ -96,16 +99,26 @@ def predict(output):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('command', choices=['predict', 'check'])
+    parser.add_argument('command', choices=['predict', 'check', 'validate'])
     parser.add_argument('--data-dir', type=Path)
-    parser.add_argument('--output', type=Path, default=ROOT/'submissions')
+    parser.add_argument('--output', type=Path)
     args = parser.parse_args()
     if args.data_dir is not None:
         os.environ['DATA_DIR'] = str(args.data_dir.resolve())
-    if args.command == 'predict':
-        predict(args.output)
+    if args.command == 'validate':
+        import sys
+        from validate_official import main as validate_main
+        arguments = [sys.argv[0]]
+        if args.data_dir is not None:
+            arguments += ['--data-dir', str(args.data_dir)]
+        if args.output is not None:
+            arguments += ['--output', str(args.output)]
+        sys.argv = arguments
+        validate_main()
+    elif args.command == 'predict':
+        predict(args.output or ROOT/'submissions')
     else:
-        if not check_submission.check_all(args.output):
+        if not check_submission.check_all(args.output or ROOT/'submissions'):
             raise SystemExit(1)
 
 

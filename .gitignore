@@ -6,6 +6,7 @@ __pycache__/
 .env.*
 data/
 reproduced_submission/
+outputs/
 *.aux
 *.log
 *.out
