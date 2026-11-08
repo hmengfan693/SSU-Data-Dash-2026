@@ -1,0 +1,16 @@
+{
+  "config": {
+    "n_estimators": 680,
+    "num_leaves": 21,
+    "learning_rate": 0.04208449292893393,
+    "min_child_samples": 31,
+    "reg_alpha": 0.7213791709814041,
+    "reg_lambda": 2.8675273881897705,
+    "colsample_bytree": 1.0
+  },
+  "frozen_at": "2026-11-05T00:08:18.745869+00:00",
+  "selection_window": [
+    "2025-09-01",
+    "2026-01-01"
+  ]
+}

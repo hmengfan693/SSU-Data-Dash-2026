@@ -1,0 +1,8 @@
+# Python 3.11; frozen final-model replay dependencies.
+numpy==2.2.6
+pandas==2.3.3
+pyarrow==22.0.0
+scikit-learn==1.7.2
+lightgbm==4.7.0
+catboost==1.2.10
+huggingface_hub==2.1.1

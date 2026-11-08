@@ -1,0 +1,51 @@
+{
+  "recorded_date": "2026-11-04",
+  "definition": "同口径完整固定方案的已有开发回测最低总体MdAPE；不是隐藏测试成绩，也不表示已替换正式提交。",
+  "off_market_fixed_four_months": {
+    "model_id": "experiments/flaml_tuning/artifacts/run_2026-10-29_v1",
+    "display_name": "FLAML自动调参完整方案（all_three特征与既有房型路由）",
+    "training_cutoff_exclusive": "2026-02-01",
+    "evaluation_start_inclusive": "2026-02-01",
+    "evaluation_end_exclusive": "2026-06-01",
+    "reference_pool_updates_within_evaluation": false,
+    "selection_metric": "MdAPE",
+    "metrics_percent": {
+      "n": 7773,
+      "mdape": 7.949597423510468,
+      "mape": 10.379027725490719
+    },
+    "prediction_evidence": "experiments/flaml_tuning/artifacts/run_2026-10-29_v1/models/predictions_unscored.csv",
+    "prediction_evidence_sha256": "e975f8ee328556cd56fb5f29a3215c742a55fc267ce52ba587a2a7ec8f366c28",
+    "final_predictions": "experiments/flaml_tuning/artifacts/run_2026-10-29_v1/final_predictions/submission_off_market_flaml.csv",
+    "final_predictions_sha256": "be936afb011f4f4a142d71d589b6481328592de496da5445c04068f8860d15db",
+    "lineage": [
+      "data_processing_round1/run_2026-10-19_v1/all_three",
+      "experiments/flaml_tuning/artifacts/run_2026-10-29_v1"
+    ],
+    "comparison_note": "仅2025年9—12月窗口调参，冻结后同7773套2026年2—5月累计开发回测；非隐藏测试成绩，未覆盖正式提交。"
+  },
+  "list_aware_fixed_four_months": {
+    "model_id": "experiments/list_aware_flaml/artifacts/run_2026-11-04_v1",
+    "display_name": "FLAML 自动调参统一 List-aware 成交挂牌比模型",
+    "candidate": "global_ratio_flaml",
+    "training_cutoff_exclusive": "2026-02-01",
+    "evaluation_start_inclusive": "2026-02-01",
+    "evaluation_end_exclusive": "2026-06-01",
+    "reference_pool_updates_within_evaluation": false,
+    "selection_metric": "MdAPE",
+    "metrics_percent": {
+      "n": 7773,
+      "mdape": 3.934101382488479,
+      "mape": 5.190149594331304
+    },
+    "prediction_evidence": "experiments/list_aware_flaml/artifacts/run_2026-11-04_v1/check/predictions_unscored.csv",
+    "prediction_evidence_sha256": "6a8700aa23eb8005e7b09ca9effb056fd563db2f29f535f1237c9876b2ce4d8d",
+    "final_predictions": "experiments/list_aware_flaml/artifacts/run_2026-11-04_v1/final_predictions/submission_list_aware_flaml.csv",
+    "final_predictions_sha256": "31ec87891f76043921da5ad1f4af7e8e7c4476a83459568398b9f38ace3dc4e8",
+    "lineage": [
+      "experiments/list_aware_v1/artifacts/run_2026-11-04_v1",
+      "experiments/list_aware_flaml/artifacts/run_2026-11-04_v1"
+    ],
+    "comparison_note": "FLAML仅使用2025-09至12调参，冻结后2026-02至05同7773套累计开发回测；非隐藏测试成绩。"
+  }
+}

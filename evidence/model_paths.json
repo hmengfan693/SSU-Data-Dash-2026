@@ -1,0 +1,14 @@
+{
+  "off_market": {
+    "original_research_model_id": "experiments/flaml_tuning/artifacts/run_2026-10-29_v1",
+    "runtime_models": "saved_models/off_market",
+    "portable_development_predictions": "evidence/off_market/predictions_unscored.csv",
+    "portable_final_predictions": "submissions/submission_off_market.csv"
+  },
+  "list_aware": {
+    "original_research_model_id": "experiments/list_aware_flaml/artifacts/run_2026-11-04_v1",
+    "runtime_models": "saved_models/list_aware",
+    "portable_development_predictions": "evidence/list_aware/predictions_unscored.csv",
+    "portable_final_predictions": "submissions/submission_list_aware.csv"
+  }
+}

@@ -1,0 +1,136 @@
+{
+  "evaluation": {
+    "n": 7773,
+    "training_n": 142227,
+    "cutoff_exclusive": "2026-02-01",
+    "end_exclusive": "2026-06-01",
+    "reference_updates": false,
+    "interpretation": "reused development backtest; hidden-test accuracy unknown"
+  },
+  "metrics": [
+    {
+      "model": "off_reference",
+      "n": 7773,
+      "mdape": 7.999153546639581,
+      "mape": 10.401350855276995,
+      "mdape_95ci": [
+        7.789443042887633,
+        8.223701485144538
+      ],
+      "mape_95ci": [
+        10.173911546632949,
+        10.63990977593166
+      ],
+      "delta_vs_current_best_pp": 0.04955612312911306,
+      "error_gt20": 969
+    },
+    {
+      "model": "off_final",
+      "n": 7773,
+      "mdape": 7.949597423510468,
+      "mape": 10.379027725490719,
+      "mdape_95ci": [
+        7.721791517738967,
+        8.18681488343369
+      ],
+      "mape_95ci": [
+        10.155641542464608,
+        10.614120182554409
+      ],
+      "delta_vs_current_best_pp": 0.0,
+      "error_gt20": 949
+    },
+    {
+      "model": "la_reference",
+      "n": 7773,
+      "mdape": 7.19520707305723,
+      "mape": 8.03208254466963,
+      "mdape_95ci": [
+        7.051039818339481,
+        7.370183326320349
+      ],
+      "mape_95ci": [
+        7.910086910386357,
+        8.161925118001873
+      ],
+      "delta_vs_current_best_pp": 3.261105690568744,
+      "error_gt20": 254
+    },
+    {
+      "model": "la_previous",
+      "n": 7773,
+      "mdape": 3.939049167005282,
+      "mape": 5.185296967776394,
+      "mdape_95ci": [
+        3.815371762740183,
+        4.045114655002901
+      ],
+      "mape_95ci": [
+        5.087661319578619,
+        5.285795368482375
+      ],
+      "delta_vs_current_best_pp": 0.004947784516795561,
+      "error_gt20": 123
+    },
+    {
+      "model": "la_final",
+      "n": 7773,
+      "mdape": 3.9341013824884863,
+      "mape": 5.190149594331304,
+      "mdape_95ci": [
+        3.8271809328693442,
+        4.070936463383523
+      ],
+      "mape_95ci": [
+        5.090869233836415,
+        5.292927667098778
+      ],
+      "delta_vs_current_best_pp": 0.0,
+      "error_gt20": 119
+    }
+  ],
+  "paired_changes": {
+    "off_market": {
+      "final_minus_reference_mdape_pp": -0.04955612312911306,
+      "paired_bootstrap_95ci_pp": [
+        -0.16874171705173663,
+        0.06697196968623113
+      ],
+      "relative_mdape_reduction_percent": 0.6195170881540535
+    },
+    "list_aware_vs_asking": {
+      "final_minus_reference_mdape_pp": -3.261105690568744,
+      "paired_bootstrap_95ci_pp": [
+        -3.4400853062093715,
+        -3.0734479634407044
+      ],
+      "relative_mdape_reduction_percent": 45.32330560408884
+    },
+    "list_aware_vs_previous": {
+      "final_minus_reference_mdape_pp": -0.004947784516795561,
+      "paired_bootstrap_95ci_pp": [
+        -0.052962382821585274,
+        0.06348189017792732
+      ],
+      "relative_mdape_reduction_percent": 0.12560860012207353
+    }
+  },
+  "final_files": {
+    "off_market": {
+      "n": 3974,
+      "sha256": "be936afb011f4f4a142d71d589b6481328592de496da5445c04068f8860d15db",
+      "official_format_checks": true
+    },
+    "list_aware": {
+      "n": 4064,
+      "sha256": "31ec87891f76043921da5ad1f4af7e8e7c4476a83459568398b9f38ace3dc4e8",
+      "official_format_checks": true
+    }
+  },
+  "bootstrap": {
+    "replicates": 2000,
+    "seed": 20261104,
+    "method": "paired row percentile",
+    "limitations": "Does not account for temporal dependence, model selection or future regime change."
+  }
+}

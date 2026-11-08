@@ -1,0 +1,2 @@
+-r ../plan_a/requirements.txt
+flaml==2.7.0

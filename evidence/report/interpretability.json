@@ -1,0 +1,55 @@
+{
+  "importance_scope": "Final May-cutoff LightGBM models; within-model split-gain shares only; CatBoost not pooled.",
+  "local_scope": "Selected January-cutoff evaluation models, no refitting or tuning; one ID-based example, not an accuracy claim.",
+  "case_selection": "Lexicographically first ml_num among Detached homes in February-May 2026, independent of error.",
+  "case": {
+    "ml_num": "SYN-0000026",
+    "date_listed": "2026-03-18 00:00:00",
+    "date_sold": "2026-03-24 00:00:00",
+    "house_type_name": "Detached",
+    "house_area": "1500-1699",
+    "community": "Hemlockvale",
+    "washrooms": "3"
+  },
+  "asking_price": 1688200.0,
+  "local_explanations": {
+    "Off-market": {
+      "expected_value": 14.149209789749884,
+      "raw_score": 13.986522180534008,
+      "attribution_sum": -0.1626876092158761,
+      "anchor_price": 1.0,
+      "baseline_price_equivalent": 1396123.1709472684,
+      "prediction": 1186505.0,
+      "archive_prediction": 1186505.0,
+      "multiplicative_adjustment": 0.8498566343313942,
+      "reconstruction_absolute_error_log": 0.0
+    },
+    "List-aware": {
+      "expected_value": -0.007688530170942987,
+      "raw_score": -0.08676490671475759,
+      "attribution_sum": -0.07907637654381448,
+      "anchor_price": 1688200.0,
+      "baseline_price_equivalent": 1675269.9934329763,
+      "prediction": 1547898.0,
+      "archive_prediction": 1547898.0,
+      "multiplicative_adjustment": 0.9239693521643788,
+      "reconstruction_absolute_error_log": 1.249000902703301e-16
+    }
+  },
+  "model_hashes": {
+    "Detached": "932833c67dba90a3a9556723d7a778bb192da07b038e407325fb1641821553b3",
+    "Semi-Detached": "2735f5e9d9315d6d3abad943f7a08ff74897288e7940fb885042e89011ae8dcb",
+    "Freehold Townhouse": "43ab473a495f61ab1c1414b2ed0a362aec50cfe526660337d7345cb5a09c3b42",
+    "Condo Townhouse": "00cc817a56920cacfd8964dc9cdf963fb4edb7b28f6c5ebbab6c9078921d2ce2",
+    "List-aware": "5aa941e7fcd61ea90ec855a8b52f995d5b45696982dc4ff65afef51efd265bcd"
+  },
+  "contribution_method": "LightGBM 4.7.0 Booster.predict(pred_contrib=True); last column expected value; additive on log-output scale.",
+  "documentation": "https://lightgbm.readthedocs.io/en/stable/pythonapi/lightgbm.Booster.html",
+  "limitations": [
+    "Neither gain nor contributions are causal effects.",
+    "Correlated variables can share or shift credit.",
+    "Gain has no effect direction and is not held-out importance.",
+    "Local baselines are model-specific, not market appraisals.",
+    "Final-model importance and January-model local examples have different fit cutoffs."
+  ]
+}

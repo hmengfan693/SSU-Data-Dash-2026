@@ -1,0 +1,21 @@
+{
+  "source": "https://huggingface.co/datasets/Baliyang/SSU_data_dash",
+  "format": "Parquet files used for release verification",
+  "files": [
+    {
+      "filename": "listings.parquet",
+      "bytes": 32881444,
+      "sha256": "18cf87fa122b544018fccbc15040403b0fed37080c44a75d1b55deca96d2c4bf"
+    },
+    {
+      "filename": "test_off_market.parquet",
+      "bytes": 894758,
+      "sha256": "d078d1bd652550a8bf33bbaa42af21e9a7ea6c42dfd53c57c083e5597165b1ad"
+    },
+    {
+      "filename": "test_list_aware.parquet",
+      "bytes": 937141,
+      "sha256": "ef1b82d16d547199b93a4e1a27d1ff3946a327854c320956a32f437b81469b35"
+    }
+  ]
+}

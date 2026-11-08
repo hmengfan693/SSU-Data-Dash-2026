@@ -1,0 +1,203 @@
+{
+  "created_at": "2026-10-29T12:43:26.467128-04:00",
+  "track": "off_market",
+  "inner_window": [
+    "2025-09-01",
+    "2026-01-01"
+  ],
+  "outer_window": [
+    "2026-02-01",
+    "2026-06-01"
+  ],
+  "final_cutoff": "2026-06-01",
+  "history_updates": false,
+  "outer_labels_used_for_tuning": false,
+  "previously_examined_windows": true,
+  "selection_metric": "MdAPE on original prices",
+  "search": {
+    "n_estimators": [
+      100,
+      1800
+    ],
+    "num_leaves": [
+      8,
+      96
+    ],
+    "learning_rate": [
+      0.01,
+      0.15
+    ],
+    "min_child_samples": [
+      10,
+      160
+    ],
+    "reg_alpha": [
+      0.0,
+      5.0
+    ],
+    "reg_lambda": [
+      0.01,
+      30.0
+    ],
+    "colsample_bytree": [
+      0.65,
+      1.0
+    ]
+  },
+  "baseline_config": {
+    "n_estimators": 600,
+    "num_leaves": 31,
+    "learning_rate": 0.05,
+    "min_child_samples": 40,
+    "reg_alpha": 0.0,
+    "reg_lambda": 5.0,
+    "colsample_bytree": 1.0
+  },
+  "branches": [
+    "Detached",
+    "Semi-Detached",
+    "Freehold Townhouse",
+    "Condo Townhouse"
+  ],
+  "seed": 42,
+  "threads": 6,
+  "time_budget_per_branch": 90.0,
+  "max_trials_per_branch": 24,
+  "budget_is_soft": true,
+  "baseline_model": {
+    "model_id": "data_processing_round1/run_2026-10-19_v1/all_three",
+    "display_name": "最新三项数据处理完整方案（all_three，继承既有其他房型路由）",
+    "training_cutoff_exclusive": "2026-02-01",
+    "evaluation_start_inclusive": "2026-02-01",
+    "evaluation_end_exclusive": "2026-06-01",
+    "reference_pool_updates_within_evaluation": false,
+    "selection_metric": "MdAPE",
+    "metrics_percent": {
+      "n": 7773,
+      "mdape": 7.999153546639581,
+      "mape": 10.401350855276995
+    },
+    "prediction_evidence": "experiments/dart_dropout/artifacts/run_2026-10-20_v1/windows/2026-02-01/baseline_predictions.csv",
+    "prediction_evidence_sha256": "04a06115393ad871c179473cca7db49f70ed9aab24f56c5eeb715e5e23cb40f8",
+    "final_predictions": "experiments/data_processing_round1/artifacts/run_2026-10-19_v1/final_predictions/submission_off_market.csv",
+    "final_predictions_sha256": "bb20552cadc4caf84ce00dd2d9cf05d2f29a39cf64db859db5c6d6c3731d63e5",
+    "lineage": [
+      "experiments/data_processing_round1/artifacts/run_2026-10-19_v1",
+      "experiments/residual_refinement/artifacts/run_2026-10-18_v2"
+    ],
+    "comparison_note": "核对已有完整固定方案；不包含按回测答案拼接的房型组合，也不与逐月更新口径混比。"
+  },
+  "baseline_index_sha256": "54cf89c60a0cf5e85267bf0ac2ff53eabadfd72eb77e7ffa9c942c4c850aa92e",
+  "source_sha256": {
+    "ORIGINAL_WORKSPACE/SSU-Data-Dash/check_submission.py": "f61e4a820a4e0436f83825bc622db1d4aa72ade0de92f00db193b9ff5061f87f",
+    "ORIGINAL_WORKSPACE/SSU-Data-Dash/data.py": "ccb691af73e97e97f34e5a2dabcf935dd89d96206d8e73d0b82294a2b3445fa2",
+    "ORIGINAL_WORKSPACE/SSU-Data-Dash/experiments/dart_dropout/__init__.py": "71256e29f1f0e7051a946a17eea44a2683482502480821ff238ced30e6ac2e19",
+    "ORIGINAL_WORKSPACE/SSU-Data-Dash/experiments/dart_dropout/models.py": "9e40b4791357c03cb7505db42e3b7a9105acadf202698f9ab9be07cbc3763713",
+    "ORIGINAL_WORKSPACE/SSU-Data-Dash/experiments/dart_dropout/run_experiment.py": "2be294dcd6d46e4e9b45fd48b77356036554569444f55ab1f2d80a94daf3e80e",
+    "ORIGINAL_WORKSPACE/SSU-Data-Dash/experiments/dart_dropout/verify_results.py": "88bf99eab1ba39ce2c6421d8e04d2fc0b1aa3a52d1dfb595358ef9176b6fa7ed",
+    "ORIGINAL_WORKSPACE/SSU-Data-Dash/experiments/data_processing_round1/__init__.py": "a7a98372b95ec980aea5f80fa35ca5940a75c028e382a3c6372dd0deafe9bf8c",
+    "ORIGINAL_WORKSPACE/SSU-Data-Dash/experiments/data_processing_round1/features.py": "2fb642d31a47b15bc871b615598154ba1b6e53a86a97df8e63154be1f81778ee",
+    "ORIGINAL_WORKSPACE/SSU-Data-Dash/experiments/data_processing_round1/predict_saved.py": "21bcab8b954e7907e890754d6c1cbd1c8ece0e807ca882b42750ad12298a7ebc",
+    "ORIGINAL_WORKSPACE/SSU-Data-Dash/experiments/data_processing_round1/run_experiment.py": "95ff3dca90ef52811c871dde39e7093548cc1e7239938c5f7e2accb1b72f8cfe",
+    "ORIGINAL_WORKSPACE/SSU-Data-Dash/experiments/data_processing_round1/verify_results.py": "cd7c6e7accef817ce4a410cb17a00980ac26df3b8dc8aa3116e328b0f7e108b4",
+    "ORIGINAL_WORKSPACE/SSU-Data-Dash/experiments/flaml_tuning/__init__.py": "b77682c818e207423145edcefbf1906d6da5aff10f2993ce9c8d988f35f307de",
+    "ORIGINAL_WORKSPACE/SSU-Data-Dash/experiments/flaml_tuning/models.py": "8a113bdef8880b0aeafb9d274069d0eb8dcbd79de765d93e06abe8d5a008e550",
+    "ORIGINAL_WORKSPACE/SSU-Data-Dash/experiments/flaml_tuning/predict_saved.py": "eb62ab2f1b080ecd71d0a7e5338f9dad57e3945dfc4b9790d54689f11246fb65",
+    "ORIGINAL_WORKSPACE/SSU-Data-Dash/experiments/flaml_tuning/requirements.txt": "074a006610a4dff731f431cf8a5c1412279fc7764e24fb185e4adc75421168b3",
+    "ORIGINAL_WORKSPACE/SSU-Data-Dash/experiments/flaml_tuning/run_experiment.py": "285c09d53c72832f3e2df79ba7873e1d40c60f6c061baaa52732df1f36a7c23f",
+    "ORIGINAL_WORKSPACE/SSU-Data-Dash/experiments/flaml_tuning/verify_results.py": "ab20d4e62244b6ec0c8a7293149dcf95d8349769c27bdeaaa054e9b924c760e4",
+    "ORIGINAL_WORKSPACE/SSU-Data-Dash/experiments/lightgbm_official/__init__.py": "49a7e7774c2734580ebdb0251498022e3505ef394b93e65c037deb7d9fe2aec3",
+    "ORIGINAL_WORKSPACE/SSU-Data-Dash/experiments/lightgbm_official/models.py": "4d4a0bb62c2572986b3a4794ab52a98196b265a6812b826ed16c33b5a6f013cb",
+    "ORIGINAL_WORKSPACE/SSU-Data-Dash/experiments/lightgbm_official/run_experiment.py": "f863fabe3fdacb9305369ad90934fd48236bf781a10121d0fe9af66ed95fdfac",
+    "ORIGINAL_WORKSPACE/SSU-Data-Dash/experiments/lightgbm_official/verify_results.py": "92862b5d70f0005adcd9088846b85e62968ec13fb27488fbadfac985a895e712",
+    "ORIGINAL_WORKSPACE/SSU-Data-Dash/experiments/plan_a/__init__.py": "5ead7864f30449819984d8c7e3e9113a6ed51f8333066a1dfd5ebea156e8ba02",
+    "ORIGINAL_WORKSPACE/SSU-Data-Dash/experiments/plan_a/features.py": "c1bd536932da03db78defc59178cb6b68e7b34bb005f3f20f60a82ac179c7211",
+    "ORIGINAL_WORKSPACE/SSU-Data-Dash/experiments/plan_a/models.py": "42b8756f0087db3589a1a12102d815426281338b34f07b2ef7697aac3edd38d5",
+    "ORIGINAL_WORKSPACE/SSU-Data-Dash/experiments/plan_a/predict_saved.py": "1c4db2542634fd5b5d49c65daf7cb6b5fc79e429a176a8c1bea39a462d65f1f7",
+    "ORIGINAL_WORKSPACE/SSU-Data-Dash/experiments/plan_a/run_experiment.py": "4675e47e48d676857d0486336165fd1d06238b51db89ac0cb57438d95aa220f2",
+    "ORIGINAL_WORKSPACE/SSU-Data-Dash/experiments/property_groups/__init__.py": "ae8a9063d084fb4c37fcd66946e6d37929688a70c72489aee1bb379348618071",
+    "ORIGINAL_WORKSPACE/SSU-Data-Dash/experiments/property_groups/models.py": "a9e4a0e218cc489815a26d1719bf7a200a089d216497e8f0b15da75eab16293d",
+    "ORIGINAL_WORKSPACE/SSU-Data-Dash/experiments/property_groups/predict_saved.py": "79987e44ad0b6bb9129503718c7f3a5fc04ea2adf5871b6c9b9807c63bc71d50",
+    "ORIGINAL_WORKSPACE/SSU-Data-Dash/experiments/property_groups/run_experiment.py": "61aae9922ea72678b796706cad0e11494271df3fb8e43846cceaa4fa629091dd",
+    "ORIGINAL_WORKSPACE/SSU-Data-Dash/experiments/property_groups/selection.py": "b20da1b63dc18db077a7053674cd9e3463ddfb6ced1d614d84562ee24a212fe4",
+    "ORIGINAL_WORKSPACE/SSU-Data-Dash/experiments/property_groups/verify_results.py": "e9615d01ac50b479e9c080413405fe87868318be3d67b3a781fc23b8e2f849b2",
+    "ORIGINAL_WORKSPACE/SSU-Data-Dash/experiments/residual_refinement/__init__.py": "034838da87974ffebc0b742bd9fdad90e34d1beb9f51c8d2b3ee2850bfb30847",
+    "ORIGINAL_WORKSPACE/SSU-Data-Dash/experiments/residual_refinement/features.py": "44685cfe1f168558cb7acaea64a70a2a3f8595d69e2a65014e6aa28c6b594f70",
+    "ORIGINAL_WORKSPACE/SSU-Data-Dash/experiments/residual_refinement/models.py": "b97f5a177b9506c093c339a7df13b99dfb8a35c4ccc0d59b076d966a17d25dd4",
+    "ORIGINAL_WORKSPACE/SSU-Data-Dash/experiments/residual_refinement/predict_saved.py": "db865315dd0fbf79f4484cf1e259f4ab717e4e87d532e1bcc5f09312d3c7310f",
+    "ORIGINAL_WORKSPACE/SSU-Data-Dash/experiments/residual_refinement/run_experiment.py": "50369a8c956a6f8b395870127b67c614d6a3190cbeee824f075301d0e0640f62",
+    "ORIGINAL_WORKSPACE/SSU-Data-Dash/experiments/residual_refinement/selection.py": "4736ed9d54ae22e3175e910623cf3f4bd512ea507b1eed3e8e043f9bfbcec8a9",
+    "ORIGINAL_WORKSPACE/SSU-Data-Dash/experiments/residual_refinement/verify_results.py": "9086cbbb0e126a8f04aa43c4fc7ff56585aaa8c4df0a931db25f649cafe0f757",
+    "ORIGINAL_WORKSPACE/SSU-Data-Dash/tests/test_flaml_tuning.py": "8429b70266cf8a09690deaf43f92b86d0426df2c3adffeb7cfdbe3ac425e8a99"
+  },
+  "input_sha256": {
+    "ORIGINAL_WORKSPACE/data/listings.parquet": "18cf87fa122b544018fccbc15040403b0fed37080c44a75d1b55deca96d2c4bf",
+    "ORIGINAL_WORKSPACE/data/test_off_market.parquet": "d078d1bd652550a8bf33bbaa42af21e9a7ea6c42dfd53c57c083e5597165b1ad",
+    "ORIGINAL_WORKSPACE/SSU-Data-Dash/experiments/data_processing_round1/artifacts/run_2026-10-19_v1/protocol.json": "0177220dbde295811e1de62434a5883f0317f6ce7ecb60e284f6dcf1d8fe1b7c",
+    "ORIGINAL_WORKSPACE/SSU-Data-Dash/experiments/residual_refinement/artifacts/run_2026-10-18_v2/source_manifest.json": "265a7d236d4ebf92428a28c4e95be6e0d8a61f9f8055217fa7f1ff71b210d384",
+    "ORIGINAL_WORKSPACE/SSU-Data-Dash/experiments/dart_dropout/artifacts/run_2026-10-20_v1/windows/2026-02-01/baseline_predictions.csv": "04a06115393ad871c179473cca7db49f70ed9aab24f56c5eeb715e5e23cb40f8",
+    "ORIGINAL_WORKSPACE/SSU-Data-Dash/experiments/data_processing_round1/artifacts/run_2026-10-19_v1/all_predictions_scored.csv": "0573a8a57c1015552b356ee4cc55d4e730d6005166083f792cf51f1e00532ae3",
+    "ORIGINAL_WORKSPACE/SSU-Data-Dash/experiments/data_processing_round1/artifacts/run_2026-10-19_v1/final_predictions/submission_off_market.csv": "bb20552cadc4caf84ce00dd2d9cf05d2f29a39cf64db859db5c6d6c3731d63e5",
+    "ORIGINAL_WORKSPACE/SSU-Data-Dash/experiments/residual_refinement/artifacts/run_2026-10-18_v2/development_candidates.csv": "0f613de3f701b704423fc283f3108127d4612777652b7e70354159825ec44764",
+    "ORIGINAL_WORKSPACE/SSU-Data-Dash/experiments/residual_refinement/artifacts/run_2026-10-18_v2/selection.json": "212707c2b99008c25e729a939b942d3d699e7faf4bd5d4c6ebe3f96c147f3d62",
+    "ORIGINAL_WORKSPACE/SSU-Data-Dash/experiments/residual_refinement/artifacts/run_2026-10-18_v2/bases/2025-09-01/train_base.parquet": "0ccb002bb0280c334393a4143cd6f3bf4340088332321024032f522ca6ce7cfc",
+    "ORIGINAL_WORKSPACE/SSU-Data-Dash/experiments/residual_refinement/artifacts/run_2026-10-18_v2/bases/2025-09-01/valid_location.parquet": "cf9a3f6da0bc53067ad1f40e8208a2936335d68185bf0bd2014bb14ab068f10c",
+    "ORIGINAL_WORKSPACE/SSU-Data-Dash/experiments/residual_refinement/artifacts/run_2026-10-18_v2/bases/2025-09-01/valid_base.parquet": "67fb8fd7be22b6b4e2c6dd9a4700f46b8cfb60bbb8c1af921895a236695d7162",
+    "ORIGINAL_WORKSPACE/SSU-Data-Dash/experiments/residual_refinement/artifacts/run_2026-10-18_v2/bases/2025-09-01/train_location.parquet": "92602802ce3bc28f6325861d52bf351b57c4c3d87090f751401fb6a5aa95c25e",
+    "ORIGINAL_WORKSPACE/SSU-Data-Dash/experiments/residual_refinement/artifacts/run_2026-10-18_v2/bases/2025-09-01/train_ids.csv": "1ad0a8f31392e7220b0cc3f70e262394aecda410019e286bca0ea98b6419a120",
+    "ORIGINAL_WORKSPACE/SSU-Data-Dash/experiments/residual_refinement/artifacts/run_2026-10-18_v2/bases/2025-09-01/predict_ids.csv": "67c3c71a6018afe74c47e0c6beb0df5677bd342d73d4db7bb39c4733da901330",
+    "ORIGINAL_WORKSPACE/SSU-Data-Dash/experiments/data_processing_round1/artifacts/run_2026-10-19_v1/windows/2025-09-01/features/train_land.parquet": "744f902ad7ade31bd2b544202d75b1a2c937f3e5b2870769f661cf0de9d90916",
+    "ORIGINAL_WORKSPACE/SSU-Data-Dash/experiments/data_processing_round1/artifacts/run_2026-10-19_v1/windows/2025-09-01/features/train_text.parquet": "482b7b1d68e7f84b66059c41cc8a011533dc200ab8d86b3a0d627a7fd1fc8811",
+    "ORIGINAL_WORKSPACE/SSU-Data-Dash/experiments/data_processing_round1/artifacts/run_2026-10-19_v1/windows/2025-09-01/features/train_history.parquet": "cfff3087ed5c78f4a0c1fc7677df5043357fb48818f8fba465d7f548124afa82",
+    "ORIGINAL_WORKSPACE/SSU-Data-Dash/experiments/data_processing_round1/artifacts/run_2026-10-19_v1/windows/2025-09-01/features/predict_history.parquet": "30c775d527cf90ad04ec17e148449987712938ee37f44b1d8070e7a14bcef75b",
+    "ORIGINAL_WORKSPACE/SSU-Data-Dash/experiments/data_processing_round1/artifacts/run_2026-10-19_v1/windows/2025-09-01/features/predict_base.parquet": "7cba341a41273744d80e41b286ae4f30d4f68fe60a895203b7476bc9b892fd59",
+    "ORIGINAL_WORKSPACE/SSU-Data-Dash/experiments/data_processing_round1/artifacts/run_2026-10-19_v1/windows/2025-09-01/features/train_base.parquet": "471ae717f6c4ac5fca1562f6ffe35bc18268362db0d68bb4d5699f76a926c982",
+    "ORIGINAL_WORKSPACE/SSU-Data-Dash/experiments/data_processing_round1/artifacts/run_2026-10-19_v1/windows/2025-09-01/features/predict_land.parquet": "f0ec4456842894023ae9c078b5042e365b2208980cfa9ee674d1705da40fef78",
+    "ORIGINAL_WORKSPACE/SSU-Data-Dash/experiments/data_processing_round1/artifacts/run_2026-10-19_v1/windows/2025-09-01/features/predict_text.parquet": "5f486de1457a93bd09b14c7b28ffed22b2abcabde52abea7ab47fec87f48582a",
+    "ORIGINAL_WORKSPACE/SSU-Data-Dash/experiments/data_processing_round1/artifacts/run_2026-10-19_v1/windows/2025-09-01/features/train_ids.csv": "d56df0252be27220f80af261a1c78d4a1cf989930b5ad0758a335cf299e9dab8",
+    "ORIGINAL_WORKSPACE/SSU-Data-Dash/experiments/data_processing_round1/artifacts/run_2026-10-19_v1/windows/2025-09-01/features/predict_ids.csv": "8c969d84aa3cbba5c73f73e2f49ae9819d126ed6257994522ebcefd1115b1744",
+    "ORIGINAL_WORKSPACE/SSU-Data-Dash/experiments/residual_refinement/artifacts/run_2026-10-18_v2/bases/2026-02-01/train_base.parquet": "fc2d402a42d5e5c1c3a209df0cb126cd589e28dd54054a1bbf5a9395589b2120",
+    "ORIGINAL_WORKSPACE/SSU-Data-Dash/experiments/residual_refinement/artifacts/run_2026-10-18_v2/bases/2026-02-01/valid_location.parquet": "f5a8e05a6765009fcfa4421394874aceab15f2c8d797fef266dd9ff1c4d33e74",
+    "ORIGINAL_WORKSPACE/SSU-Data-Dash/experiments/residual_refinement/artifacts/run_2026-10-18_v2/bases/2026-02-01/valid_base.parquet": "322f9678dc3877e59004f9865c60cb44ddf2d2955b544890e9f0b106cdb9e3b5",
+    "ORIGINAL_WORKSPACE/SSU-Data-Dash/experiments/residual_refinement/artifacts/run_2026-10-18_v2/bases/2026-02-01/train_location.parquet": "f956042db75b4012c76bbb2c8713da91d50fc100709ee1d247751b170c9aeaba",
+    "ORIGINAL_WORKSPACE/SSU-Data-Dash/experiments/residual_refinement/artifacts/run_2026-10-18_v2/bases/2026-02-01/train_ids.csv": "d6488cf69498c8ee6df9237ca766c5ace7fbb3a6dff9e576275db33101f2364d",
+    "ORIGINAL_WORKSPACE/SSU-Data-Dash/experiments/residual_refinement/artifacts/run_2026-10-18_v2/bases/2026-02-01/predict_ids.csv": "c6220a2990216710a067ebf317ab4a7c17c713b8123b21a483238ef58255ce70",
+    "ORIGINAL_WORKSPACE/SSU-Data-Dash/experiments/data_processing_round1/artifacts/run_2026-10-19_v1/windows/2026-02-01/features/train_land.parquet": "725900f9babfb6b6b408dd5f9f125118f76c853eca8dc128781e9cf7bd2a4265",
+    "ORIGINAL_WORKSPACE/SSU-Data-Dash/experiments/data_processing_round1/artifacts/run_2026-10-19_v1/windows/2026-02-01/features/train_text.parquet": "4e491abee66dd1c742695bd9154462c770f75dc475e1a4db99039c933b1f6373",
+    "ORIGINAL_WORKSPACE/SSU-Data-Dash/experiments/data_processing_round1/artifacts/run_2026-10-19_v1/windows/2026-02-01/features/train_history.parquet": "2f8f3a3f53678cec83ee885f369c5fb6f77bd5e218bd9dc201d6d34b921fe59d",
+    "ORIGINAL_WORKSPACE/SSU-Data-Dash/experiments/data_processing_round1/artifacts/run_2026-10-19_v1/windows/2026-02-01/features/predict_history.parquet": "d2966602cfdb2d482e0058330e0ef6c3bb5a6a3cd15a5ab8faa656fe4391580d",
+    "ORIGINAL_WORKSPACE/SSU-Data-Dash/experiments/data_processing_round1/artifacts/run_2026-10-19_v1/windows/2026-02-01/features/predict_base.parquet": "d3772ca7e4002c582e58372aee83075f7f95fdfca1362b5d3a4d39121e8ba23b",
+    "ORIGINAL_WORKSPACE/SSU-Data-Dash/experiments/data_processing_round1/artifacts/run_2026-10-19_v1/windows/2026-02-01/features/train_base.parquet": "9c12ddaed82b52fc8ab7d671a2a58a8a1a516e2a0b9bc6e4e5a4f4186e63e2e8",
+    "ORIGINAL_WORKSPACE/SSU-Data-Dash/experiments/data_processing_round1/artifacts/run_2026-10-19_v1/windows/2026-02-01/features/predict_land.parquet": "c2bf41e4995631c7a4f16db66bd7db06be38967f8c02386d4dcdcb0592660e13",
+    "ORIGINAL_WORKSPACE/SSU-Data-Dash/experiments/data_processing_round1/artifacts/run_2026-10-19_v1/windows/2026-02-01/features/predict_text.parquet": "693832fdb5917d7de24f8748a22cffd0b4ddb7d269b227d9d4e8fd04368f6ca8",
+    "ORIGINAL_WORKSPACE/SSU-Data-Dash/experiments/data_processing_round1/artifacts/run_2026-10-19_v1/windows/2026-02-01/features/train_ids.csv": "36125d4723eabd5eafd4a42487558fb8f509eb83f0440eb32a07f4d514b9b2c3",
+    "ORIGINAL_WORKSPACE/SSU-Data-Dash/experiments/data_processing_round1/artifacts/run_2026-10-19_v1/windows/2026-02-01/features/predict_ids.csv": "cff54a44d8f5fe26b1ed7496427c3429d302a155bdf64bd85bd3680cf9b3484b",
+    "ORIGINAL_WORKSPACE/SSU-Data-Dash/experiments/residual_refinement/artifacts/run_2026-10-18_v2/bases/2026-06-01/train_base.parquet": "3deb8166d680bc0b10a53573176ed274595de507eff91e5fef1cd30d1a281bf1",
+    "ORIGINAL_WORKSPACE/SSU-Data-Dash/experiments/residual_refinement/artifacts/run_2026-10-18_v2/bases/2026-06-01/valid_location.parquet": "cc6ec0fdcac7328e2d28ec704b9e88305d1cc01375fe1f89c582b12691e94b76",
+    "ORIGINAL_WORKSPACE/SSU-Data-Dash/experiments/residual_refinement/artifacts/run_2026-10-18_v2/bases/2026-06-01/valid_base.parquet": "5ae72fbf5d715be500d71b8a3f92a9da0d297fda80ceee209b00c0414d5ffff8",
+    "ORIGINAL_WORKSPACE/SSU-Data-Dash/experiments/residual_refinement/artifacts/run_2026-10-18_v2/bases/2026-06-01/train_location.parquet": "0f095a185c75a349426b0bef5930d605249f27e2c5e5dc30feaccf7e41544e6a",
+    "ORIGINAL_WORKSPACE/SSU-Data-Dash/experiments/residual_refinement/artifacts/run_2026-10-18_v2/bases/2026-06-01/train_ids.csv": "b88f27644bdfa8a5b7bd198493421505077dbf8e4ef7b512d5e8e5298fbcb78b",
+    "ORIGINAL_WORKSPACE/SSU-Data-Dash/experiments/residual_refinement/artifacts/run_2026-10-18_v2/bases/2026-06-01/predict_ids.csv": "98c03ace88f6d6d8089aa307f54b61505dd74c3bd4022be25a4ff4134954ae11",
+    "ORIGINAL_WORKSPACE/SSU-Data-Dash/experiments/data_processing_round1/artifacts/run_2026-10-19_v1/windows/2026-06-01/features/train_land.parquet": "d547ef8fb150973bd15e6937f7255ea007097b8cb1d077ee51b3fd6796ae97c6",
+    "ORIGINAL_WORKSPACE/SSU-Data-Dash/experiments/data_processing_round1/artifacts/run_2026-10-19_v1/windows/2026-06-01/features/train_text.parquet": "3a052e21ddbe67d4f85095e803f5064089aec67278c60b84af6e71c774c59cb0",
+    "ORIGINAL_WORKSPACE/SSU-Data-Dash/experiments/data_processing_round1/artifacts/run_2026-10-19_v1/windows/2026-06-01/features/train_history.parquet": "d1c0c7c4fa4f7ac59f008bec1b85fc23cbb0bbe9c732a223c44c66ceb2ff68fe",
+    "ORIGINAL_WORKSPACE/SSU-Data-Dash/experiments/data_processing_round1/artifacts/run_2026-10-19_v1/windows/2026-06-01/features/predict_history.parquet": "2b161f06544547fce5455241e0415fbfa2eecf17a826fe4cd052e3093d89204b",
+    "ORIGINAL_WORKSPACE/SSU-Data-Dash/experiments/data_processing_round1/artifacts/run_2026-10-19_v1/windows/2026-06-01/features/predict_base.parquet": "d4cb989962fb3cde61f07cfe6c2a3bf9bdd0523a7c003c55fe17d5d685672820",
+    "ORIGINAL_WORKSPACE/SSU-Data-Dash/experiments/data_processing_round1/artifacts/run_2026-10-19_v1/windows/2026-06-01/features/train_base.parquet": "aeaf3870b4a38849e9b53065a77ca9e0ba5d404b91e68bcff1aeacbdd220470e",
+    "ORIGINAL_WORKSPACE/SSU-Data-Dash/experiments/data_processing_round1/artifacts/run_2026-10-19_v1/windows/2026-06-01/features/predict_land.parquet": "286b5951b64165b2d61c2bc298a8cb31062d52a1e1fa9c464bd24e7eeceac4e9",
+    "ORIGINAL_WORKSPACE/SSU-Data-Dash/experiments/data_processing_round1/artifacts/run_2026-10-19_v1/windows/2026-06-01/features/predict_text.parquet": "034176c76e129d8abaa0fc935518dadb7525406272bd84b8656aedf40f48e98b",
+    "ORIGINAL_WORKSPACE/SSU-Data-Dash/experiments/data_processing_round1/artifacts/run_2026-10-19_v1/windows/2026-06-01/features/train_ids.csv": "c696ce1116d5ec30a02debc751123284d9309d836defc590d98cc93773825f54",
+    "ORIGINAL_WORKSPACE/SSU-Data-Dash/experiments/data_processing_round1/artifacts/run_2026-10-19_v1/windows/2026-06-01/features/predict_ids.csv": "046ee2f4079617a7682c595c3a08beed5e0bb5c60d3fd002afbb9a871b3af5ca"
+  },
+  "protected_submissions": {
+    "ORIGINAL_WORKSPACE/SSU-Data-Dash/submissions/submission_list_aware.csv": "cd5ccde434d166883b5ba68d9c62448caf2fb4db63c643ab792d263cc85a33a4",
+    "ORIGINAL_WORKSPACE/SSU-Data-Dash/submissions/submission_off_market.csv": "2a56549f7bc0b954b974e766c7f69726a10eb9304c3b6b00c45ef5de94f634d1"
+  },
+  "versions": {
+    "flaml": "2.7.0",
+    "lightgbm": "4.7.0",
+    "numpy": "2.2.6",
+    "pandas": "2.3.3",
+    "scikit-learn": "1.7.2"
+  }
+}

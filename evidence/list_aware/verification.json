@@ -1,0 +1,13 @@
+{
+  "hashes_unchanged": true,
+  "inner_only_selection": true,
+  "original_parameters_reproduced": true,
+  "train_ids_cutoffs": true,
+  "frozen_config_matches_models": true,
+  "raw_query_features_rebuilt": true,
+  "saved_incumbent_and_candidate_replay_exact": true,
+  "paired_metrics": true,
+  "independent_numpy_metrics": true,
+  "official_submission_check": true,
+  "final_rows": 4064
+}

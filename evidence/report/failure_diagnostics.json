@@ -1,0 +1,15 @@
+{
+  "n": 7773,
+  "protocol": "Frozen 2026-02-01 models and history; February-May reused development cohort",
+  "selection": "All price/type/size/month slices; all communities archived, >=100 homes for narrative comparisons",
+  "size_definition": "Midpoint of reported area range; lower-inclusive 1000/2000 sq-ft cut points",
+  "signed_error_definition": "100 * (prediction / realized price - 1); negative means underprediction",
+  "limitations": [
+    "Outcome-defined price slices are retrospective only.",
+    "Community extremes are selected after inspection and are not generalization estimates.",
+    "Community/size comparisons are unadjusted for type, price and other correlated attributes.",
+    "No models, routes or forecasts were changed based on this diagnostic."
+  ],
+  "prediction_sha256": "ac9ae402c2fab71d8067063e856aefca7a6d660b65ee022d77af3b7d68e2bea4",
+  "raw_data_sha256": "18cf87fa122b544018fccbc15040403b0fed37080c44a75d1b55deca96d2c4bf"
+}

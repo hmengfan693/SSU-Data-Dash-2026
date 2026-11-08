@@ -1,0 +1,16 @@
+{
+  "verified_at": "2026-10-29T12:52:00.969462-04:00",
+  "n": 7773,
+  "baseline_mdape": 7.999153546639581,
+  "candidate_mdape": 7.949597423510468,
+  "delta_mdape_pp": -0.04955612312911306,
+  "candidate_mape": 10.379027725490719,
+  "source_and_inputs_unchanged": true,
+  "outer_model_replay": true,
+  "raw_final_replay": true,
+  "final_n": 3974,
+  "selected_sha256": "d2703fbeb5be6d91e03639fb6f2249d4bfb11a7cee037b2222e3d56a99f76c4d",
+  "final_sha256": "be936afb011f4f4a142d71d589b6481328592de496da5445c04068f8860d15db",
+  "prediction_sha256": "e975f8ee328556cd56fb5f29a3215c742a55fc267ce52ba587a2a7ec8f366c28",
+  "paired_sha256": "3172e2a6c2aa9669caf63c4dfeb3cf75fa5107a73415f94740b1631a8ece25fb"
+}

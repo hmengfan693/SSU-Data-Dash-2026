@@ -1,0 +1,46 @@
+{
+  "frozen_at": "2026-10-29T12:49:40.499415-04:00",
+  "configs": {
+    "Detached": {
+      "n_estimators": 830,
+      "num_leaves": 11,
+      "learning_rate": 0.08206418746402123,
+      "min_child_samples": 26,
+      "reg_alpha": 0.0,
+      "reg_lambda": 1.4805901959018517,
+      "colsample_bytree": 0.9794442942666441
+    },
+    "Semi-Detached": {
+      "n_estimators": 867,
+      "num_leaves": 59,
+      "learning_rate": 0.05369072588867778,
+      "min_child_samples": 47,
+      "reg_alpha": 0.19356070234139308,
+      "reg_lambda": 2.799775931493452,
+      "colsample_bytree": 0.9450285756423937
+    },
+    "Freehold Townhouse": {
+      "n_estimators": 386,
+      "num_leaves": 18,
+      "learning_rate": 0.1449075151987689,
+      "min_child_samples": 35,
+      "reg_alpha": 0.6315154815375674,
+      "reg_lambda": 30.0,
+      "colsample_bytree": 1.0
+    },
+    "Condo Townhouse": {
+      "n_estimators": 359,
+      "num_leaves": 15,
+      "learning_rate": 0.05578952036251141,
+      "min_child_samples": 40,
+      "reg_alpha": 0.9297671804868848,
+      "reg_lambda": 4.569196997228023,
+      "colsample_bytree": 1.0
+    }
+  },
+  "tuning_window": [
+    "2025-09-01",
+    "2026-01-01"
+  ],
+  "no_outer_labels": true
+}

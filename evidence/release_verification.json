@@ -1,0 +1,44 @@
+{
+  "verification_date_toronto": "2026-11-07",
+  "environment": "Fresh isolated Python 3.11.16 environment; root requirements installed independently of research environment",
+  "library_versions": {
+    "numpy": "2.2.6",
+    "pandas": "2.3.3",
+    "pyarrow": "22.0.0",
+    "scikit-learn": "1.7.2",
+    "lightgbm": "4.7.0",
+    "catboost": "1.2.10",
+    "huggingface_hub": "2.1.1"
+  },
+  "current_index_exact_copy": true,
+  "predictions": {
+    "off_market": {
+      "rows": 3974,
+      "sha256": "be936afb011f4f4a142d71d589b6481328592de496da5445c04068f8860d15db",
+      "raw_feature_rebuild": true,
+      "all_selected_saved_branches_replayed": true,
+      "exact_current_index_bytes": true,
+      "official_checker_local_data": true,
+      "official_checker_default_huggingface_loader": true,
+      "archived_development_scores_recomputed_and_match_index": true,
+      "change_from_indexed_current_best_mdape_pp": 0
+    },
+    "list_aware": {
+      "rows": 4064,
+      "sha256": "31ec87891f76043921da5ad1f4af7e8e7c4476a83459568398b9f38ace3dc4e8",
+      "raw_feature_rebuild": true,
+      "all_selected_saved_branches_replayed": true,
+      "exact_current_index_bytes": true,
+      "official_checker_local_data": true,
+      "official_checker_default_huggingface_loader": true,
+      "archived_development_scores_recomputed_and_match_index": true,
+      "change_from_indexed_current_best_mdape_pp": 0
+    }
+  },
+  "training_or_parameter_changes": false,
+  "limitations": [
+    "Saved-model prediction replay, not retraining or rerunning research search",
+    "Selected-model official monthly walk-forward evaluation is outstanding",
+    "No hidden-test scores or form submission"
+  ]
+}
